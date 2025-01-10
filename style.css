@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #4c6ef5, #7a4fff, #ff5eb6);
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  height: 100%;
+  padding: 20px;
+}
+.alert{
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  z-index: 9999;
+}
+.container {
+  background: #ffffff48;
+  border-radius: 20px;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2),
+              -8px -8px 15px rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  max-width: 600px;
+  padding: 40px;
+  text-align: center;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.upload-section {
+  margin-bottom: 30px;
+}
+
+.upload-label {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.upload-label:hover {
+  background-color: #0056b3;
+}
+
+#image-upload {
+  display: none;
+}
+
+.image-container {
+  margin-top: 20px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#download{
+  display: none;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+.color-palette {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.color-palette div {
+  height: 80px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+.color-palette div:hover{
+  scale: 1.1;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #777;
+}
+

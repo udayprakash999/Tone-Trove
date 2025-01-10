@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Color Palette Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>ToneTrove</h1>
+            <h3>Image Color Palette Generator</h3>
+            <p>Upload an image to generate a beautiful color palette.</p>
+        </header>
+
+        <main>
+            <div class="upload-section">
+                <label for="image-upload" class="upload-label">
+                    <span>Select Image</span>
+                    <input type="file" id="image-upload" accept="image/*" />
+                </label>
+            </div>
+
+            <div id="image-container" class="image-container"></div>
+            <button id="download">Download Palette</button>
+
+            <div>
+                <label for="color-count" id="color-count-label" style="display: none;">Number of Colors:</label>
+                <input type="number" id="color-count" min="1" max="15" value="5" style="display: none;">
+            </div>
+
+            <div id="color-palette" class="color-palette"></div>
+        </main>
+
+        <footer>
+            <p>Created with 💻 by Uday Prakash Gupta</p>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.6.0/color-thief.min.js"
+        integrity="sha512-Qsp00gBIzIqLPECogMy5bQ6uOsMig9lc37A8qEHMvSze65UK21DHONbfSTY09zE9V8C0tQN+ldPU6w0wlBSfcA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
